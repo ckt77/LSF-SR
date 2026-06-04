@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+
+# Local Hugging Face token
+hf_token.txt
+
+# Custom directories
+recommender_code/experiments/
+
+# Data files
+*.json
+*.gz
+
+# Model files
+*.pt
+
+# Large data files
+*.pkl
+*.csv
