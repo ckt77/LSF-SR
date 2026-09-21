@@ -3,7 +3,7 @@ import torch
 import json
 
 device = torch.device("cuda:1" if torch.cuda.is_available() else "cpu")
-file_path = '../build_datasets_and_prompts/data/Yelp/'
+file_path = '../build_datasets_and_prompts/data/Beauty/'
 with open(file_path + 'responses_item_summary.json', 'r') as file:
     item_txt_dic = json.load(file)
 item_num = len(set(item_txt_dic.keys()))
@@ -40,5 +40,5 @@ for i in range(0, len(texts), batch_size):
     all_embeddings.append(embeddings_simcse.cpu())
 
 all_embeddings = torch.cat(all_embeddings, dim=0)
-torch.save(all_embeddings, file_path + 'yelp_item_semantic_embeddings.pt')
+torch.save(all_embeddings, file_path + 'beauty_item_semantic_embeddings.pt')
 print("inference over", all_embeddings.shape)
