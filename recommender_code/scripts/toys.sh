@@ -24,7 +24,7 @@ for SEED in "${SEEDS[@]}"; do
         --experiment_name planar_3 \
         --flow_init_scale 0.001 \
         --flow_type planar \
-        --item_semantic_emb_file '../build_datasets_and_prompts/data/Toys_and_Games/toys_and_games_item_semantic_embeddings_from_prompt.pt' \
+        --item_semantic_emb_file '../build_datasets_and_prompts/data/Toys_and_Games/toys_and_games_item_semantic_embeddings.pt' \
         --lr_cosine_eta_min 1e-4 \
         --lr_cosine_period 30 \
         --num_flows 3 \

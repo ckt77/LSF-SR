@@ -23,7 +23,7 @@ for SEED in "${SEEDS[@]}"; do
         --experiment_name radial_3 \
         --flow_init_scale 0.001 \
         --flow_type radial \
-        --item_semantic_emb_file '../build_datasets_and_prompts/data/Office_Products/office_products_item_semantic_embeddings_from_prompt.pt' \
+        --item_semantic_emb_file '../build_datasets_and_prompts/data/Office_Products/office_products_item_semantic_embeddings.pt' \
         --lr_cosine_period 30 \
         --num_flows 3 \
         --seed ${SEED} \
