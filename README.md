@@ -1,6 +1,6 @@
 # LSF-SR
 
-Official implementation of **"LSF-SR: Latent Semantic Fusion for Sequential Recommendation via Flow-based Conditional Variational Autoencoders."**
+Official implementation of **"[LSF-SR: Latent Semantic Fusion for Sequential Recommendation via Flow-based Conditional Variational Autoencoders.](https://arxiv.org/abs/2609.29815v1)"**
 
 ## Environment
 
